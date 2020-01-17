@@ -7,8 +7,6 @@ const port = 5000;
 app.use(express.json());
 app.use(express.static(staticPath));
 
-app.get('/', (req, res) => {
-  console.log(staticPath);
-});
+app.get('/', (req, res) => console.log(staticPath));
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
