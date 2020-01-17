@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
+    "start": "nodemon server/api/index",
     "build": "webpack --mode=production"
   },
   "repository": {
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/mr1hm/user-authentication#readme",
   "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^7.17.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -27,6 +30,7 @@
     "@babel/core": "^7.8.3",
     "@babel/plugin-transform-react-jsx": "^7.8.3",
     "babel-loader": "^8.0.6",
+    "nodemon": "^2.0.2",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"

@@ -9,6 +9,8 @@ export default class App extends React.Component {
   }
 
   render() {
-    return null;
+    return (
+      <h1>HELLO</h1>
+    );
   }
 }
