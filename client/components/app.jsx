@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import Header from './header';
 
 export default class App extends React.Component {
@@ -25,7 +26,9 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Header text="HELLO" />
+      <Container className="main" fluid={true}>
+        <Header text="HELLO" />
+      </Container>
     );
   }
 }
