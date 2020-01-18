@@ -2,4 +2,4 @@
 .idea/
 .vscode/
 node_modules
-server/api/db_conn.js
+server/public/api/db_conn.js
