@@ -10,7 +10,6 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
   console.log(staticPath);
-  console.log(db.getUsers);
 });
 
 app.get('/api/users', db.getUsers);
