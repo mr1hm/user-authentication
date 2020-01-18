@@ -26,7 +26,9 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Header text="HELLO" />
+      <Container className="main" fluid={true}>
+        <Header text="HELLO" />
+      </Container>
     );
   }
 }
