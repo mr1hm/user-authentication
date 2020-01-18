@@ -1,4 +1,6 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import Header from './header';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -24,7 +26,9 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <h1>HELLO</h1>
+      <Container className="main" fluid={true}>
+        <Header text="HELLO" />
+      </Container>
     );
   }
 }
