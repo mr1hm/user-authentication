@@ -1,17 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
+import Welcome from './welcome';
 import Header from './header';
 
-export default class App extends React.Component {
+export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      users: []
+      users: [],
+      welcome: true
     };
   }
 
   componentDidMount() {
     this.getUsers();
+    setTimeout(() => this.setState({ welcome: false }), 3000);
   }
 
   getUsers() {
