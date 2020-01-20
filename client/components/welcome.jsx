@@ -10,6 +10,15 @@ export default class Welcome extends Component {
   }
 
   render() {
-    return null;
+    return (
+      <Row className="bg-light flex-fill">
+        <Col className="">
+          <div className="welcome d-flex justify-content-center align-items-center">
+            Welcome
+            <img className="ml-3" src="images/welcome-logo.png" alt="" />
+          </div>
+        </Col>
+      </Row>
+    );
   }
 }

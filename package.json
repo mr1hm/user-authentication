@@ -9,8 +9,7 @@
     "dev:server": "nodemon server/index",
     "dev": "npm-run-all --parallel --silent dev:*",
     "start": "node server/index.js",
-    "build": "webpack --mode=production",
-    "public": "webpack-dev-server --public myapp.test:80"
+    "build": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
