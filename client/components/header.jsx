@@ -11,7 +11,13 @@ export default class Header extends Component {
 
   render() {
     return (
-      <h1>{this.props.text}</h1>
+      <Container className="header-container" fluid={true}>
+        <Row>
+          <Col className="d-flex justify-content-center">
+            <h1>{this.props.text}</h1>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

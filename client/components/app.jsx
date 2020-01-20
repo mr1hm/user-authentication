@@ -29,12 +29,17 @@ export default class App extends Component {
 
   render() {
     const { welcome, users } = this.state;
-    return (
-      <>
+    if (welcome) {
+      return (
         <Container className="main bg-light d-flex" fluid={true}>
-          {welcome ? <Welcome /> : <Header text="HELLO" />}
+          <Welcome />
         </Container>
-      </>
+      );
+    }
+    return (
+      <Container className="main bg-light" fluid={true}>
+        <Header text="openmysesame" />
+      </Container>
     );
   }
 }
