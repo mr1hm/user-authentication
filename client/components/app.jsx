@@ -28,10 +28,13 @@ export default class App extends Component {
   }
 
   render() {
+    const { welcome, users } = this.state;
     return (
-      <Container className="main" fluid={true}>
-        <Header text="HELLO" />
-      </Container>
+      <>
+        <Container className="main bg-light d-flex" fluid={true}>
+          {welcome ? <Welcome /> : <Header text="HELLO" />}
+        </Container>
+      </>
     );
   }
 }
