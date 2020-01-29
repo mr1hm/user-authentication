@@ -24,6 +24,8 @@ app.get('/', (req, res) => {
   console.log(staticPath);
 });
 
+app.get('/auth/google', passport.authenticate('google', { scope: ['https://www.googleapis.com/auth/plus.login'] }, (req, res) => console.log('i ran')));
+app.get('/auth/google/callback', passport.authenticate('google', { failureRedirect: '/login' }), db.googleAuthFail);
 app.get('/api/users', db.getUsers);
 app.get('/api/users/:id', db.getUserById);
 app.post('/api/users', db.createUser);
