@@ -41,10 +41,13 @@ const deleteUser = (req, res) => {
   })
 }
 
+const googleAuthFail = (req, res) => res.redirect('/');
+
 module.exports = {
   getUsers,
   getUserById,
   createUser,
   updateUser,
-  deleteUser
+  deleteUser,
+  googleAuthFail
 }
